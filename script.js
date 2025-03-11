@@ -19,7 +19,7 @@ class medico extends pessoa {
 
 class enfermeiro extends pessoa {
     enfermar() {
-        return `Olá, sou o(a) ${this.nome} não sou médico(a), mas tenho tanta importância quanto um.`;
+        return `Olá, sou o(a) ${this.nome}, não sou médico(a), mas tenho tanta importância quanto um.`;
     }
 }
 
