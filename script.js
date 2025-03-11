@@ -65,6 +65,7 @@ window.onload = () => {
         respostaContainer.appendChild(respostaElement);
     }
 
+    //Append é uma função que adiciona elementos ao final de uma lista ou conjunto de elementos.
     appendFuncioInfo(Stranger);
     appendFuncioInfo(Grey);
     appendFuncioInfo(Buck);
