@@ -25,7 +25,7 @@ class enfermeiro extends pessoa {
 
 class faxineira extends pessoa {
     faxinar() {
-        return `Olá, sou o(a) ${this.nome}, eu quem mantenho o lugar limpo o que ajuda na segurança de todos os pacientes.`;
+        return `Olá, sou o(a) ${this.nome}, eu quem mantenho o lugar limpo, o que ajuda na segurança de todos os pacientes.`;
     }
 }
 
