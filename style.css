@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 0.5%;
+    font-size: 3rem;
+    color: #000000;
+}
+
+/* Estilos para o container principal */
+#respostas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10%;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Estilo das caixas de respostas */
+.ms-2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Ícone personalizado */
+.custom-icon {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Estilo do texto */
+.ms-2 p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Ajusta a exibição dos itens no container para colunas em telas menores */
+    #respostas {
+        padding: 10px;
+    }
+
+    /* Ajusta o layout das caixas para melhor visualização em dispositivos móveis */
+    .ms-2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Ajusta o tamanho da fonte dos textos */
+    .ms-2 p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .custom-icon {
+        font-size: 1.5rem;
+    }
+
+    /* Ajuste final para telas pequenas */
+    .ms-2 {
+        padding: 15px;
+        gap: 10px;
+    }
+}
